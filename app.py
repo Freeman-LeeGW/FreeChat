@@ -1,7 +1,7 @@
 import os
 
 import streamlit as st
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from langchain import hub
 from langchain.agents import AgentExecutor, create_openai_tools_agent, load_tools
 from langchain.memory import ConversationBufferMemory
@@ -9,7 +9,7 @@ from langchain_community.callbacks import StreamlitCallbackHandler
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_openai import ChatOpenAI
 
-load_dotenv()
+# load_dotenv()
 
 def create_agent_chain(history):
     chat = ChatOpenAI(
